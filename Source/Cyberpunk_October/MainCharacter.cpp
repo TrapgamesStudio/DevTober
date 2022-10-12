@@ -2,6 +2,8 @@
 
 
 #include "MainCharacter.h"
+
+#include "MovingAlongSplineActor.h"
 #include "PickupComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
@@ -45,6 +47,12 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("Move Forward / Backward",this,&AMainCharacter::MoveForward);
 	PlayerInputComponent->BindAction("interactButton",IE_Pressed,this, &AMainCharacter::InteractWithObject);
 	
+	PlayerInputComponent->BindAction("Forward",IE_Pressed,this, &AMainCharacter::MoveObjectForward);
+	PlayerInputComponent->BindAction("Backward",IE_Pressed,this, &AMainCharacter::MoveObjectBackward);
+
+	PlayerInputComponent->BindAction("Forward",IE_Released,this, &AMainCharacter::StopMovement);
+	PlayerInputComponent->BindAction("Backward",IE_Released,this, &AMainCharacter::StopMovement);
+
 }
 
 void AMainCharacter::InteractWithObject()
@@ -63,20 +71,60 @@ void AMainCharacter::InteractWithObject()
 		DrawDebugLine(GetWorld(), startTrace, endTrace, FColor(255,0,0),true);
 		DrawDebugSphere(GetWorld(), hitResult.ImpactPoint,m_CapsuleRadius,2,FColor::Blue,true);
 		GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("You hit %s"),*hitResult.GetActor()->GetName()));
-		UPickupComponent* pickupObject = Cast<UPickupComponent>(hitResult.GetActor());
+		AMovingAlongSplineActor* pickupObject = Cast<AMovingAlongSplineActor>(hitResult.GetActor());
 
 		if(pickupObject != nullptr)
 		{
-			GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("You hit %s"),*hitResult.GetActor()->GetName()));
+			target = pickupObject;
+			GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("féléicitation ")));
 		}
-		
 	}
-	
+}
+
+void AMainCharacter::TriggerSensorialDance()
+{
+}
+
+
+void AMainCharacter::MoveObjectForward()
+{
+	GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("You hit Moveforward")));
+
+	if(target!=nullptr)
+	{
+		target->Goforward();
+	}else
+	{
+		GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("Can't")));
+	}
+}
+
+void AMainCharacter::MoveObjectBackward()
+{
+	GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("You hit MoveBackward")));
+
+	if(target!=nullptr)
+	{
+		target->FastBackward();
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("Can't")));
+	}
+}
+
+void AMainCharacter::StopMovement()
+{
+	if(target!=nullptr)
+	{
+		target->StopMoving();
+	}
 }
 
 
 void AMainCharacter::MoveForward(float axis)
 {
+
 	FRotator rotation = Controller->GetControlRotation();
 	FRotator yawRotation(0.0f, rotation.Yaw,0.0f);
 
@@ -87,6 +135,7 @@ void AMainCharacter::MoveForward(float axis)
 
 void AMainCharacter::MoveRight(float axis)
 {
+
 	FRotator rotation = Controller->GetControlRotation();
 	FRotator yawRotation(0.0f, rotation.Yaw,0.0f);
 
@@ -94,3 +143,4 @@ void AMainCharacter::MoveRight(float axis)
 
 	AddMovementInput(direction,axis);
 }
+

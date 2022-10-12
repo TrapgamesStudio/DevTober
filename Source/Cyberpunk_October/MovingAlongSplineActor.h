@@ -39,6 +39,18 @@ public:
 	void TriggerEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* otherActor, UPrimitiveComponent* otherComponent, int32 otherBodyIndex);
 
 public :
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= SpeedMovement)
+	float m_CurrentMovementSpeed = 1.0f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= SpeedMovement)
+	float m_MovementSpeed = 1.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= SpeedMovement)
+	float m_FastSpeed = 2.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= SpeedMovement)
+	float m_FastRevertSpeed = 1.0f;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= Spline, meta = (AllowPrivateAccess = "true"))
 	USplineComponent* m_splineComponent;
 
@@ -60,8 +72,26 @@ public :
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category= Spline, meta = (EditCondition = "!bReverseOnEndtimeLine"))
 	bool bRestartOnEndTimeLine;
 
+	void FastForward();
+	void FastBackward();
+	void Goforward();
+	void GoBackward();
+
+	void StopMoving();
+	void ForceResetPosition();
+
+	void MovementAcceleration();
+	void FastRevertMovement();
+	void NormalMovement();
+
 private:
 	FTimeline _TimeLine;
+
+	void MovingForward();
+	void MovingBackward();
+
+	void ResetPosition();
+
 
 	
 };

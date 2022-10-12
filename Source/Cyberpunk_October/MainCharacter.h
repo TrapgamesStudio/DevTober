@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "MovingAlongSplineActor.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "MainCharacter.generated.h"
@@ -28,6 +29,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= Raycast)
 	float m_CapsuleRadius = 20.0f;
+
+	AMovingAlongSplineActor* target;
 	
 	void MoveForward (float axis);
 	void MoveRight (float axis);
@@ -46,4 +49,9 @@ public:
 
 private:
 	void InteractWithObject();
+	void TriggerSensorialDance();
+	
+	void MoveObjectForward();
+	void MoveObjectBackward();
+	void StopMovement();
 };
