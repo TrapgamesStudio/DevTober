@@ -1,0 +1,26 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "C:\\DevTober\\DevTober_WwiseProject\\",
+   "SourceFilesRoot": "C:\\DevTober\\DevTober_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "C:\\DevTober\\DevTober_WwiseProject\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "C:\\DevTober\\DevTober_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "4072029455",
+    "GUID": "{15CD073E-194D-4151-AFF0-3527179796A1}",
+    "Language": "SFX",
+    "Hash": "3355021290",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\New_SoundBank",
+    "ShortName": "New_SoundBank",
+    "Path": "New_SoundBank.bnk"
+   }
+  ]
+ }
+}
