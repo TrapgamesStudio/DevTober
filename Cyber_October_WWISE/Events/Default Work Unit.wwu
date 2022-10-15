@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9DD1BB52-5E94-4A69-876D-A76584634F15}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{9DD1BB52-5E94-4A69-876D-A76584634F15}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_PLYR_FTS_CR" ID="{17715B3C-E801-402E-BBA6-681ECE26979C}">
+					<ChildrenList>
+						<Action Name="" ID="{66446435-E020-4AA4-93E0-4FFCC9A2A1AD}" ShortID="485951540">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PLYR_FTS_CR" ID="{F2EA35F6-D2EB-4116-92D7-AA867C1138D8}" WorkUnitID="{D0FF78EB-853B-4B44-9119-EBCDDAA3F6CD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

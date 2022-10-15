@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\DevTober\Cyber_October_WWISE\</ProjectRoot>
+		<SourceFilesRoot>C:\DevTober\Cyber_October_WWISE\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\DevTober\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\DevTober\Cyber_October_WWISE\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1584861542" Language="SFX" Hash="3851505492">
+			<ObjectPath>\SoundBanks\SB\SB</ObjectPath>
+			<ShortName>SB</ShortName>
+			<Path>SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4036581617" Name="Play_PLYR_FTS_CR" ObjectPath="\Events\Default Work Unit\Play_PLYR_FTS_CR">
+					<IncludedMemoryFiles>
+						<File Id="3232732" Language="SFX">
+							<ShortName>SFX_Fts_Plyr_cncr_wd_5.wav</ShortName>
+							<Path>SFX\SFX_Fts_Plyr_cncr_wd_5_10C4C929.wem</Path>
+						</File>
+						<File Id="237510063" Language="SFX">
+							<ShortName>SFX_Fts_Plyr_cncr_wd_8.wav</ShortName>
+							<Path>SFX\SFX_Fts_Plyr_cncr_wd_8_10C4C929.wem</Path>
+						</File>
+						<File Id="250722092" Language="SFX">
+							<ShortName>SFX_Fts_Plyr_cncr_wd_2.wav</ShortName>
+							<Path>SFX\SFX_Fts_Plyr_cncr_wd_2_10C4C929.wem</Path>
+						</File>
+						<File Id="442490475" Language="SFX">
+							<ShortName>SFX_Fts_Plyr_cncr_wd_3.wav</ShortName>
+							<Path>SFX\SFX_Fts_Plyr_cncr_wd_3_10C4C929.wem</Path>
+						</File>
+						<File Id="604872125" Language="SFX">
+							<ShortName>SFX_Fts_Plyr_cncr_wd_6.wav</ShortName>
+							<Path>SFX\SFX_Fts_Plyr_cncr_wd_6_10C4C929.wem</Path>
+						</File>
+						<File Id="688938791" Language="SFX">
+							<ShortName>SFX_Fts_Plyr_cncr_wd_7.wav</ShortName>
+							<Path>SFX\SFX_Fts_Plyr_cncr_wd_7_10C4C929.wem</Path>
+						</File>
+						<File Id="877048024" Language="SFX">
+							<ShortName>SFX_Fts_Plyr_cncr_wd_1.wav</ShortName>
+							<Path>SFX\SFX_Fts_Plyr_cncr_wd_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1047197872" Language="SFX">
+							<ShortName>SFX_Fts_Plyr_cncr_wd_4.wav</ShortName>
+							<Path>SFX\SFX_Fts_Plyr_cncr_wd_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
