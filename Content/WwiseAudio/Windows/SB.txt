@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4036581617	Play_PLYR_FTS_CR			\Default Work Unit\Play_PLYR_FTS_CR	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3232732	SFX_Fts_Plyr_cncr_wd_5	C:\DevTober\Cyber_October_WWISE\.cache\Windows\SFX\SFX_Fts_Plyr_cncr_wd_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLYR\PLYR_FTS_CR\SFX_Fts_Plyr_cncr_wd_5		192064
+	237510063	SFX_Fts_Plyr_cncr_wd_8	C:\DevTober\Cyber_October_WWISE\.cache\Windows\SFX\SFX_Fts_Plyr_cncr_wd_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLYR\PLYR_FTS_CR\SFX_Fts_Plyr_cncr_wd_8		192064
+	250722092	SFX_Fts_Plyr_cncr_wd_2	C:\DevTober\Cyber_October_WWISE\.cache\Windows\SFX\SFX_Fts_Plyr_cncr_wd_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLYR\PLYR_FTS_CR\SFX_Fts_Plyr_cncr_wd_2		192064
+	442490475	SFX_Fts_Plyr_cncr_wd_3	C:\DevTober\Cyber_October_WWISE\.cache\Windows\SFX\SFX_Fts_Plyr_cncr_wd_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLYR\PLYR_FTS_CR\SFX_Fts_Plyr_cncr_wd_3		192064
+	604872125	SFX_Fts_Plyr_cncr_wd_6	C:\DevTober\Cyber_October_WWISE\.cache\Windows\SFX\SFX_Fts_Plyr_cncr_wd_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLYR\PLYR_FTS_CR\SFX_Fts_Plyr_cncr_wd_6		192064
+	688938791	SFX_Fts_Plyr_cncr_wd_7	C:\DevTober\Cyber_October_WWISE\.cache\Windows\SFX\SFX_Fts_Plyr_cncr_wd_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLYR\PLYR_FTS_CR\SFX_Fts_Plyr_cncr_wd_7		192064
+	877048024	SFX_Fts_Plyr_cncr_wd_1	C:\DevTober\Cyber_October_WWISE\.cache\Windows\SFX\SFX_Fts_Plyr_cncr_wd_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLYR\PLYR_FTS_CR\SFX_Fts_Plyr_cncr_wd_1		192064
+	1047197872	SFX_Fts_Plyr_cncr_wd_4	C:\DevTober\Cyber_October_WWISE\.cache\Windows\SFX\SFX_Fts_Plyr_cncr_wd_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLYR\PLYR_FTS_CR\SFX_Fts_Plyr_cncr_wd_4		192064
+
