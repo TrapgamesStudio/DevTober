@@ -70,5 +70,6 @@ Saved/*
 Intermediate/*
 Plugins/*/Intermediate/*
 Plugins/Developer/RiderLink/*
+Plugins/Wwise/Binaries/*
 # Cache files for the editor to use
 DerivedDataCache/*
