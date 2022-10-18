@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "MovingAlongSplineActor.h"
+#include "PickupComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "MainCharacter.generated.h"
@@ -54,4 +55,5 @@ private:
 	void MoveObjectForward();
 	void MoveObjectBackward();
 	void StopMovement();
+
 };

@@ -78,6 +78,16 @@ void AMainCharacter::InteractWithObject()
 			target = pickupObject;
 			GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("féléicitation ")));
 		}
+		else
+		{
+			UPickupComponent* pickUp = Cast<UPickupComponent>(hitResult.GetActor()->GetComponentByClass(UPickupComponent::StaticClass()));//GetComponent(UPickupComponent);
+			//UPickupComponent* pickUp = Cast<UPickupComponent>();
+			GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("UPickupComponent %s"),pickUp));
+
+			if(pickUp != nullptr)
+				GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("UPickupComponent ")));
+
+		}
 	}
 }
 

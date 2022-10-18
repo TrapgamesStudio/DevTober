@@ -3,6 +3,8 @@
 
 #include "MovingAlongSplineActor.h"
 
+#include "MainCharacter.h"
+
 // Sets default values
 AMovingAlongSplineActor::AMovingAlongSplineActor()
 {
@@ -89,6 +91,12 @@ void AMovingAlongSplineActor::OnEndMovementTimeLine()
 void AMovingAlongSplineActor::TriggerBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* otherActor,
                                                   UPrimitiveComponent* otherComponent, int32 otherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	/*AMainCharacter* character = Cast<AMainCharacter>(otherActor);
+
+	if(character != nullptr)
+	{
+		GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor(255,0,0),FString::Printf(TEXT("Character")));
+	}
 	FOnTimelineFloat progressFunction;																					//
 	progressFunction.BindUFunction(this,TEXT("ProcessMovementTimeLine"));							// Set up une méthode qui s'executera lorsque la timeline est en marche
 	_TimeLine.AddInterpFloat(m_MovementCurve,progressFunction);															//
@@ -98,7 +106,7 @@ void AMovingAlongSplineActor::TriggerBeginOverlap(UPrimitiveComponent* Overlappe
 	_TimeLine.SetTimelineFinishedFunc(OnTimelineFinishedFunction);														//
 
 	_TimeLine.SetTimelineLength(TL_LastKeyFrame);																		// set la fin de la timeline a la dernière keyframe
-	_TimeLine.Play();
+	_TimeLine.Play();*/
 }
 
 
